@@ -1,1 +1,23 @@
 Alumnos participantes: Tomas Jeronimo Cabrera Osuna, Camila Bonahora
+
+e- Comandos para resolver el TP:
+
+#Clonar el repositorio forkeado:
+git clone https://github.com/Camila-Bon/TP_SO_i2_Equipo111.git
+
+#Entrar a la carpeta:
+cd TP_SO_i2_Equipo111
+
+#Editar fork.txt (FORK) (manualmente)
+
+#Agregar y subir los cambios:
+git add fork.txt
+git commit -m "ALFA agregó sus datos"
+git push origin main
+
+# Agregar repositorio original de BETA:
+git remote add https://github.com/Cabrerajeronimo/TP_SO_i2_Equipo.git
+
+#Traer cambios de BETA
+git fetch upstream
+git merge upstream/main
